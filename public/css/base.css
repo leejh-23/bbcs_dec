@@ -1,0 +1,11 @@
+body {
+    background-color: white; /* in case the background image is not available */
+    background-image: url('https://i.pinimg.com/736x/38/06/5e/38065e768c84f029547017674dff6bf8.jpg');
+    background-position: center 15%;
+    background-size: cover; /* ensures that the background image covers the entire viewport height */
+    background-repeat: no-repeat;
+    min-height: 100vh; /* ensures that the body covers at least the whole viewport height */
+    background-attachment: fixed; /* ensures the background image stays fixed and does not move while scrolling */
+    overflow: scroll;
+    overflow-x: hidden;
+}

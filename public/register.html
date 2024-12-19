@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Register</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <!-- stylesheets -->
+    <link href="./css/base.css" rel="stylesheet" />
+    <link href="./css/nav.css" rel="stylesheet" />
+    <link href="./css/register.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!--- navigation bar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/santa-claus.png" 
+            class="logo img-fluid"/>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- these are the links that will be displayed on the right hand side of the navbar -->
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a id='organisations-link' class="nav-link" href="organisations.html">Donate</a>
+            </li>
+            <li class="nav-item">
+              <a id='tree-link' class="nav-link" href="tree.html">Tree</a>
+            </li>
+          </ul>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- ms-auto: margin-left: auto -->
+          <ul class="navbar-nav ms-auto">
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="profile.html" id="profileButton" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Profile
+              </a>
+            </li> -->
+            <li class="nav-item">
+              <a id="profileButton" href="profile.html" class="nav-link">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a id="logoutButton" href="#" class="nav-link">Logout</a>
+            </li>
+            <li class="nav-item">
+              <a id="loginButton" href="/login.html" class="nav-link">Login</a>
+            </li>
+            <li>
+              <div class="btn-nav">
+                <a id="registerButton" class="btn text-bg-dark btn-small navbar-btn" href="/register.html"
+                  >Register</a
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="py-4">
+      <div class="container registration-form">
+        <div class="row justify-content-center">
+          <div class="col-md-8 px-3">
+            <h3 class="mb-4 text-center"><strong>Register</strong></h3>
+            <form id="signupForm"> <!-- registration form with username, email and password -->
+                <div class="form-group mb-4 input-box">
+                  <label for="username">Username</label>
+                  <input type="text" class="form-control" id="username" required>
+                </div>
+
+                <div class="form-group mb-4 input-box">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" required>
+                </div>
+
+                <div class="form-group mb-4 input-box">
+                  <label for="password">Password</label>
+                  <input type="password" class="form-control" id="password" required>
+                </div>
+
+                <div class="form-group mb-4 input-box">
+                  <label for="confirmPassword">Confirm Password</label>
+                  <input type="password" class="form-control" id="confirmPassword" required>
+                </div>
+
+                <button type="submit" class="btn btn-dark btn-block mb-4">Signup</button>
+              </form> 
+              
+              <!-- hidden warning card that will be displayed if there are any errors -->
+              <div id="warningCard" class="card bg-light border-danger mb-3 d-none">
+                <div class="card-body text-danger">
+                  <p id="warningText" class="card-text"></p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/queryCmds.js" type="text/javascript"></script>
+    <script src="js/getCurrentURL.js" type="text/javascript"></script>
+    <script src="js/userNavbarToggle.js" type="text/javascript"></script>
+    <script src="js/registerUser.js" type="text/javascript"></script>
+  </body>
+</html>

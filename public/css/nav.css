@@ -1,0 +1,15 @@
+nav {
+    background-color: darkgreen; 
+} 
+
+.navbar a {
+    color: white
+}
+
+.navbar-brand img {
+    max-height: 40px;
+}
+
+.navbar a:hover { /* so that it remains white even when its hovered over */
+    color: white;
+}
